@@ -218,16 +218,26 @@ class Scoreboard(Turtle):
         self.display_names()
 
     def display_winner(self):
-        """Displays the winner name at the centre of the screen after a finished game and resets the score."""
+        """
+        Displays the winner name at the centre of the screen after a finished game and resets the score.
+        If it is specified to be an even number of games, then a draw outcome will also be checked.
+        """
         self.goto(0, 0)
-        if self.left_score > self.right_score:
-            winner = self.players[0]
+        if self.left_score == self.right_score:     # draw
+            self.write(
+                f"DRAW",
+                align=ALIGNMENT,
+                font=(FONT_NAME, 40, FONT_STYLE)
+            )
         else:
-            winner = self.players[1]
-        self.write(
-            f"{winner} wins!",
-            align=ALIGNMENT,
-            font=(FONT_NAME, 40, FONT_STYLE)
-        )
+            if self.left_score > self.right_score:      # single player win
+                winner = self.players[0]
+            else:
+                winner = self.players[1]
+            self.write(
+                f"{winner} wins!",
+                align=ALIGNMENT,
+                font=(FONT_NAME, 40, FONT_STYLE)
+            )
         self.reset_score()
 
