@@ -2,7 +2,7 @@
 
 A classic pong game implemented using the Turtle graphics module in Python.
 
-## Project Filesh
+## Project Files
 1. `main.py`: Main script that initialises the game and handles user input for player names and replay prompts.
 2. `config.py`: Stores configuration parameters (global variables) for the game, allowing custimisation across nearly every aspect.
 3. `gameplay.py`: Manages the main game logic by handling ball movement, collisions and rounds by utilising objects, attributes and methods.
