@@ -6,7 +6,7 @@ import time
 
 class Pong:
     """
-    Represent the pong game.
+    Represents the pong game.
 
     args:
     player_names (tuple(str, str)) - tuple containing player names for the left and right side
