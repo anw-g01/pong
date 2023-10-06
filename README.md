@@ -8,7 +8,7 @@ A classic pong game implemented using the Turtle graphics module in Python.
 3. `gameplay.py`: Manages the main game logic by handling ball movement, collisions and rounds by utilising objects, attributes and methods.
 4. `classes.py`: Contains definitions of classes to represent the paddles, ball and scoreboard for the pong game for use in the main game logic.
 
-# How to play
+## How to play
 1. Run `main.py` to start the program.
 2. Enter names of two players in the command line prompt.
 3. Paddle keybind controls are set to "`W`" and "`S`" for the left player and the `up` and `down` arrow keys for the right player (can be changed to preference if required in `config.py`).
